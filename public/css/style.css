@@ -1,0 +1,136 @@
+/* rgb(138,218,255) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+nav {
+    position: relative;
+    display: flex;
+    left: 0;
+    right: 0;
+    top: 0;
+    justify-content: space-between;
+    background-color: rgb(138,218,255);
+
+}
+
+#chatprofile {
+    display: flex;
+    margin: 12px 23px;
+
+}
+
+#chatprofile img {
+    height: 50px;
+}
+
+.profile p:nth-child(1) {
+    font-weight: 800;
+    margin: 5px 0px 3px 23px;
+}
+
+.profile p:nth-child(2) {
+    font-size: 11px;
+    margin-left: 23px;
+}
+
+nav>img {
+    height: 38px;
+    margin: 19px 19px;
+}
+
+form{
+    position: relative;
+    background: rgb(138,218,255);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+} 
+#messages{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+    flex: 1;
+}
+#messages p{
+    padding: 0.5rem 1rem 2rem 1rem;
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid rgb(138,218,255);
+    margin: 1rem 0;
+  
+    
+}
+#messages p:nth-child(even){
+   align-self: flex-end;
+    margin-left: 2rem;
+    border-radius:10px 0px 0px 10px;
+}
+
+
+#messages p:nth-child(odd){
+     margin-right:2rem;
+     border-radius: 0px 10px 10px 0px;
+    }
+    
+    
+
+input {
+    width: 94%;
+    height: 24px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 0;
+}
+button{
+    border: 0;
+    background: transparent;
+
+}
+button img{
+    height: 28px;
+    mix-blend-mode: darken;
+}
+
+
+@media (max-width:450px) {
+    input {
+        width: 77%;
+        height: 24px;
+        padding: 5px;
+        border-radius: 20px;
+        border: 0;
+    }
+    button img {
+        height: 24px;
+    }
+    #chatprofile {
+        margin: 12px 8px;
+    }
+    #chatprofile img {
+        height: 33px;
+    }
+    .profile p:nth-child(1) {
+        margin: 5px 0px 3px 7px;
+        font-size: 14px;
+    }
+    .profile p:nth-child(2) {
+        font-size: 11px;
+        margin-left: 8px;
+    }
+    nav>img {
+        height: 29px;
+        margin: 13px 9px;
+    }
+}

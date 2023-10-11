@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "A real time chatapp",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Ankijit",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^7.6.0",
+    "socket.io": "^4.7.2"
+  }
+}
